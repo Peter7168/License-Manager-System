@@ -34,7 +34,7 @@ app.post('/signup', (req, res) => {
     return res.status(400).json({ message: 'Email already registered' });
   }
 
-  // Add the new user to the array
+  // Create new user and add to the array
   const newUser = { firstname, lastname, email };
   users.push(newUser);
 
